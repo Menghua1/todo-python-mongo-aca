@@ -1,4 +1,4 @@
-name: WebApp
+name: Todo-python-mongo
 version: 1.0.0
 summary: Azure Web App Environment
 description: Deploys an Azure Web App without a data store
@@ -6,8 +6,8 @@ runner: ARM
 templatePath: azuredeploy.json
 
 parameters:
-  - id: name
-    name: Name
+  - id: environmentName
+    name: environmentName
     description: 'Name of the Web App.'
     type: string
     required: true
